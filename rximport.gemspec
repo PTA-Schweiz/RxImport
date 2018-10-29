@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "rximport"
   spec.version       = Rximport::VERSION
   spec.authors       = ["Stefan Staub"]
-  spec.email         = ["ste.staub@gmail.com"]
+  spec.email         = ["stefan.staub@pta.ch"]
 
   spec.summary       = %q{Creek based excel parser with mapping support}
   spec.description   = %q{Flexible and configurable excel parser to read and map data from excel files}
