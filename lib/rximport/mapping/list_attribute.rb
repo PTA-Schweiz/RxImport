@@ -30,16 +30,26 @@ module Rximport
       def apply_mapping(source, target, mapper_obj)
         type = options.fetch(:type, :array)
         case type
-          when :array
-            target[attr_key] = to_array(source, mapper_obj)
-          when :hash
-            target[attr_key] = to_hash(source, mapper_obj)
-          else
-            raise "Unknown type #{type} for list_attribute"
+        when :array
+          target[attr_key] = to_array(source, mapper_obj)
+        when :hash
+          target[attr_key] = to_hash(source, mapper_obj)
+        else
+          raise "Unknown type #{type} for list_attribute"
         end
+      rescue StandardError => e
+        raise_mapping_error(e, mapper_obj, source)
       end
 
       private
+
+      def raise_mapping_error(e, mapper_obj, source)
+        raise MappingError.new "Error while mapping #{@column_or_index_range} to #{attr_key}: #{e.message}",
+                               e,
+                               "#{@column_or_index_range.first}#{source.row_index + 1}:#{@column_or_index_range.last}#{source.row_index + 1}",
+                               attr_key,
+                               mapper_obj
+      end
 
       def to_array(source, mapper_obj)
         result = []

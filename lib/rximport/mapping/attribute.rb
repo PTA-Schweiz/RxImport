@@ -26,6 +26,12 @@ module Rximport
       # @param [Object] mapper_obj The instance of the Mapper object to call the converter on
       def apply_mapping(source, target, mapper_obj)
         target[attr_key] = convert_value(source[@column_or_index], mapper_obj)
+      rescue StandardError => e
+        raise MappingError.new "Error while mapping #{@column_or_index} to #{attr_key}: #{e.message}",
+                               e,
+                               "#{@column_or_index}#{source.row_index + 1}",
+                               attr_key,
+                               mapper_obj
       end
 
       def value_blank?(val)

@@ -2,6 +2,8 @@ module Rximport
   module Mapping
     class Base
       class << self
+        include Converters
+
         attr_accessor :mappings
 
         # list with all defined mappings
@@ -30,8 +32,7 @@ module Rximport
         end
       end
 
-      def apply(values)
-        target = {}
+      def apply(values, target={})
         self.class.mappings.each do |mapping|
           mapping.apply_mapping(values, target, self)
         end

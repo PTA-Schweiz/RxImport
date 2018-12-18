@@ -37,7 +37,7 @@ RSpec.describe Rximport::Parser do
     let(:mapping) { DesktopAndNotebookPlatforms.new }
     let(:parser_config) { { sheet: 2,
                             has_titles: true,
-                            title_index: 0,
+                            title_index: 1,
                             date_start_index: 5 }}
     subject { Rximport::Parser.new File.open("spec/fixtures/demodata.xlsx"), parser_config }
 

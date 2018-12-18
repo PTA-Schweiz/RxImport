@@ -45,12 +45,14 @@ module Rximport
       @file = options.fetch(:remote, false) ? create_tmp_file(file) : file
 
       # do not check file extension, we already do that in the uploader
-      @creek = ::Creek::Book.new @file,check_file_extension: false
+      @creek = ::Creek::Book.new @file, check_file_extension: false
     end
 
     # Set the a mapper
     # @param [Mapping::Base] value The mapper to use when using #mapped_rows
     def mapper=(value)
+      Rximport.logger.info "Parser: Setting mapper to #{value.class.name}"
+
       unless value.nil? || value.respond_to?(:apply)
         raise 'mapper must respond to #apply(values).'
       end
@@ -59,6 +61,7 @@ module Rximport
     end
 
     def titles
+      Rximport.logger.info "Parser: Reading titles from sheet #{sheet.name} at row #{title_index + 1}"
       title_row.values
     end
 
@@ -76,10 +79,13 @@ module Rximport
       rows_to_skip = data_start_index
       cached_columns = columns
 
+      Rximport.logger.info "Parser: Reading rows in sheet #{sheet.name}, starting at row #{data_start_index + 1}"
+
       data_rows = sheet.simple_rows.lazy
                       .drop(rows_to_skip)
-                      .map { |r| Row.new(cached_columns, r) }
                       .reject(&:blank?)
+                      .each_with_index
+                      .map { |r, idx| Row.new(cached_columns, r, idx + rows_to_skip, sheet.name) }
 
       data_rows.map do |row|
         if block_given?
@@ -142,6 +148,7 @@ module Rximport
     end
 
     def create_tmp_file(uri)
+      Rximport.logger.info "Parser: Loading excel from remote location: #{uri}"
       tmpfile = Tempfile.create('import')
       tmpfile.binmode
       tmpfile.write(HTTP.get(uri).to_s)
