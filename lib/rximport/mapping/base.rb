@@ -1,9 +1,9 @@
 module Rximport
   module Mapping
     class Base
-      class << self
-        include Converters
+      include Converters
 
+      class << self
         attr_accessor :mappings
 
         # list with all defined mappings
