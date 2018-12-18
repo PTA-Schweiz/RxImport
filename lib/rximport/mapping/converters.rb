@@ -1,13 +1,13 @@
 module Rximport
   module Mapping
     module Converters
-      FALSEY_VALUES = [false, 0, "0", "f", "F", "false", "FALSE", "off", "OFF", nil]
+      FALSEY_VALUES = [false, 0, '0', 'f', 'F', 'false', 'FALSE', 'off', 'OFF', '', nil].freeze
 
       # Convert any non nil or empty or other falsey value to true
       # False values:
-      #   false, 0, "0", "f", "F", "false", "FALSE", "off", "OFF", nil
+      #   false, 0, '0', 'f', 'F', 'false', 'FALSE', 'off', 'OFF', '', nil
       def value_to_bool(value, _column=nil, _attr_key=nil)
-        FALSEY_VALUES.include? value
+        !FALSEY_VALUES.include? value
       end
 
       # Tries to convert the value to a Numeric by calling
@@ -24,7 +24,7 @@ module Rximport
 
       # Removes leading whitespaces and whitespaces at the end of the string.
       def strip_string(value, _column=nil, _attr_key=nil)
-        value.is_a? String ? value.strip : value
+        value.is_a?(String) ? value.strip : value
       end
 
       private

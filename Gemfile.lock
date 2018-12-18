@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rximport (0.1.1)
+    rximport (0.1.2)
       concurrent-ruby
       creek (~> 2.4.1)
 

@@ -5,7 +5,7 @@ class Sku < Rximport::Mapping::Base
   # map_attribute 'J', :pl
   # map_attribute 'A', :series
   map_attribute 'A', :pn
-  map_attribute 'B', :platform_name
+  map_attribute 'B', :platform_name, :strip_string
   map_attribute 'C', :long_description
   map_attribute 'D', :street_price, :convert_street_price
   map_attribute 'I', :predecessor, :convert_predecessor

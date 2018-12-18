@@ -2,8 +2,8 @@
 class DesktopAndNotebookPlatforms < Rximport::Mapping::Base
   SUCCESSOR_NIL_VALUES = ['---', 'No replacement', nil, ' ']
 
-  map_attribute 'B', :sort
-  map_attribute 'C', :name
+  map_attribute 'B', :sort, :to_numeric
+  map_attribute 'C', :name, :strip_string
   # map_attribute 'D', :family
   map_attribute 'F', :claim
 
