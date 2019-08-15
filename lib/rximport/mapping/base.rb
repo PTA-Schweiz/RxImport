@@ -5,10 +5,15 @@ module Rximport
 
       class << self
         attr_accessor :mappings
+        attr_accessor :model_class
 
         # list with all defined mappings
         def mappings
           @mappings ||= []
+        end
+
+        def map_to_model(model_class)
+          @model_class = model_class
         end
 
         def map_attribute(column_or_index, attr_key, converter = nil)
@@ -36,7 +41,13 @@ module Rximport
         self.class.mappings.each do |mapping|
           mapping.apply_mapping(values, target, self)
         end
-        target
+
+        if self.class.model_class
+          self.class.model_class.new target
+        else
+          target
+        end
+
       end
 
     end

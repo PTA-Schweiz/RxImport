@@ -3,8 +3,8 @@
   <component name="ModuleRunConfigurationManager">
     <shared>
       <configuration default="false" name="Rximport::Parser columns: rximport" type="RSpecRunConfigurationType" factoryName="RSpec">
-        <predefined_log_file id="RUBY_RSPEC" enabled="true" />
         <module name="rximport" />
+        <predefined_log_file enabled="true" id="RUBY_RSPEC" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -36,8 +36,8 @@
         <method v="2" />
       </configuration>
       <configuration default="false" name="Rximport::Parser rows returns a row with columns specification: rximport" type="RSpecRunConfigurationType" factoryName="RSpec">
-        <predefined_log_file id="RUBY_RSPEC" enabled="true" />
         <module name="rximport" />
+        <predefined_log_file enabled="true" id="RUBY_RSPEC" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -69,8 +69,8 @@
         <method v="2" />
       </configuration>
       <configuration default="false" name="Rximport::Parser mapping returns mapped rows: rximport" type="RSpecRunConfigurationType" factoryName="RSpec">
-        <predefined_log_file id="RUBY_RSPEC" enabled="true" />
         <module name="rximport" />
+        <predefined_log_file enabled="true" id="RUBY_RSPEC" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -102,8 +102,8 @@
         <method v="2" />
       </configuration>
       <configuration default="false" name="Rximport::Parser offsets sets titles from correct index: rximport" type="RSpecRunConfigurationType" factoryName="RSpec">
-        <predefined_log_file id="RUBY_RSPEC" enabled="true" />
         <module name="rximport" />
+        <predefined_log_file enabled="true" id="RUBY_RSPEC" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -135,8 +135,8 @@
         <method v="2" />
       </configuration>
       <configuration default="false" name="Rximport::Parser offsets remote files: rximport" type="RSpecRunConfigurationType" factoryName="RSpec">
-        <predefined_log_file id="RUBY_RSPEC" enabled="true" />
         <module name="rximport" />
+        <predefined_log_file enabled="true" id="RUBY_RSPEC" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
         <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -174,8 +174,7 @@
     <orderEntry type="jdk" jdkName="rbenv: 2.4.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.5.2, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.4, rbenv: 2.4.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="creek (v2.4.1, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="domain_name (v0.5.20180417, rbenv: 2.4.2) [gem]" level="application" />
@@ -186,8 +185,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.9.1, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.3, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.8.0, rbenv: 2.4.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.7.0, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.7.1, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.7.0, rbenv: 2.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.7.0, rbenv: 2.4.2) [gem]" level="application" />
