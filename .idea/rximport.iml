@@ -171,27 +171,10 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="rbenv: 2.4.2" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="rbenv: 2.5.5" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.5.2, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="creek (v2.4.1, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="domain_name (v0.5.20180417, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="http (v3.3.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.3, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="http-form_data (v2.1.1, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.6.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.9.1, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.3, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.7.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.7.1, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.7.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.7.0, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.7.1, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.2, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="unf (v0.1.4, rbenv: 2.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="unf_ext (v0.0.7.5, rbenv: 2.4.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.0, rbenv: 2.5.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, rbenv: 2.5.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, rbenv: 2.5.5) [gem]" level="application" />
   </component>
 </module>
